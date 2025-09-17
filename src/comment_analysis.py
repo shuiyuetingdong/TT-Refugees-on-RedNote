@@ -37,17 +37,17 @@ class comment_analysis_dspy(dspy.Signature):
     评论: str = dspy.InputField() 
 
     # 分析过程: str = dspy.OutputField() 
-    蔑视: int = dspy.OutputField() 
-    嫉妒: int = dspy.OutputField() 
-    厌恶: int = dspy.OutputField() 
-    恐惧: int = dspy.OutputField() 
-    愤怒: int = dspy.OutputField() 
-    惊奇: int = dspy.OutputField() 
-    赞扬: int = dspy.OutputField() 
-    自豪: int = dspy.OutputField() 
-    快乐: int = dspy.OutputField() 
-    尊敬: int = dspy.OutputField() 
-    立场: Literal['偏向中国', '偏向外国', '中立'] = dspy.OutputField() 
+    蔑视: int = dspy.OutputField() # Contempt
+    嫉妒: int = dspy.OutputField() # Jealousy
+    厌恶: int = dspy.OutputField() # Disgust
+    恐惧: int = dspy.OutputField() # Fear
+    愤怒: int = dspy.OutputField() # Anger
+    惊奇: int = dspy.OutputField() # Surprise
+    赞扬: int = dspy.OutputField() # Praise
+    自豪: int = dspy.OutputField() # Pride
+    快乐: int = dspy.OutputField() # Joy
+    尊敬: int = dspy.OutputField() # Respect
+    立场: Literal['偏向中国', '偏向外国', '中立'] = dspy.OutputField() # Pro_China, Pro_Foreign, Neutral
 
 
 
